@@ -1,0 +1,75 @@
+<%- include('header') -%>
+<div class="bg text-center">
+    <div class="centered">
+        <p class="firstLine">F &nbsp; I &nbsp; N &nbsp; D &nbsp; &nbsp; W &nbsp; E &nbsp; A &nbsp; T &nbsp; H &nbsp; E &nbsp; R &nbsp; </p>
+        <p class="secondLine">The Simplest Weather Client Ever</p>
+        <form action="/" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="inputStyle form-control" name="place" placeholder="Enter City Name" aria-label="Enter City Name" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light" type="submit" name="submit">Show</button>
+                </div>
+            </div>
+        </form>
+        <div class="card" style="width: 30rem;">
+            <div class="row head">
+                <div class="col-sm-6 head-left">
+                    <h5 class="text-left">
+                        <%= place %>,
+                        <%= code %>
+                    </h5>
+                </div>
+                <div class="col-sm-6 head-right">
+                    <h5 class="text-right">
+                        <%= day %>,
+                        <%= hours %>:
+                        <%= minutes %>
+                    </h5>
+                </div>
+            </div>
+            <div class="row middle">
+                <div class="col-sm-8 temp">
+                     <span class="small grey"><span><%= desc %></span></span>
+                    <h1 class="mb-0 font-weight-bold heading">
+                        <%= temp %>° C </h1>
+                    <span class="small grey"></span></span>
+                    <div class="row">
+                        <div class="col-6">
+                            <span>min:
+                                <%= min_temp %>° C
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span>max:
+                                <%= max_temp %>° C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img class="" src='<%= url%>' alt="Card image cap">
+                </div>
+            </div>
+            <hr>
+            <div class="card-body">
+                <div class="row card-text">
+                    <div class="col-sm-4">
+                        <span class="card-heading"><i class="icon fa fa-thermometer-0"></i>&nbsp;Feels Like</span>
+                        <p>
+                            <%= feels_like %>° C</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="card-heading"><i class="icon fa fa-superpowers"></i>&nbsp;Wind</span>
+                        <p>
+                            <%= wind %>km/hr</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="card-heading">
+                            <i class="icon fa fa-tint"></i>&nbsp;Humidity</span>
+                        <p>
+                            <%= humidity %>%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

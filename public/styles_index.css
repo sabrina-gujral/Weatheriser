@@ -1,0 +1,171 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+html,
+body {
+    height: 100%
+}
+
+* {
+    padding: 0px;
+    margin: 0px
+}
+.bg {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url(http://i.imgur.com/w16HASj.png);
+    background-size: 100% 100%;
+    background-position: top center
+}
+
+.content {
+    margin-top: 20%
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.inputStyle {
+    border: solid 1px white !important;
+    background: transparent !important;
+    width: 300px;
+    padding: 10px 20px
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 12px;
+    color: white !important;
+    font-weight: 600;
+}
+
+.social-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 47%
+}
+
+i {
+    padding: 5px;
+    color: white
+}
+
+input,
+input:focus {
+    border: solid 1px white;
+    outline: 0;
+    -webkit-appearance: none;
+    box-shadow: nones;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+.secondLine {
+    font-weight: 350;
+    font-size: 15px;
+    margin-bottom: 10%;
+    color: white;
+    float: center;
+}
+
+.firstLine {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.button {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .firstLine {
+        font-size: 20px;
+    }
+}
+
+.card {
+    background: #121754 !important;
+    border-radius: 50px !important;
+    border: 0 !important;
+    box-shadow: 9px 10px 24px -6px rgba(2,2,2,0.72);
+    color: #6f707d;
+    font-family: 'Karla', sans-serif;
+    opacity: 0.6;
+}
+
+.heading {
+    font-size: 55px;
+    color: #A8D6A3;
+    padding-bottom: 2%;
+}
+
+
+.fa {
+    color: #a5a5b1;
+}
+
+*:focus {
+    outline: none
+}
+
+.icon{
+    color: #fff;
+
+}
+
+.card-body {
+    color: #ABC3C3 !important;
+}
+
+.head{
+    margin-top: 20px;
+    padding-bottom: 5%;
+}
+
+.middle {
+    padding-bottom: 5%;
+}
+
+.head-left {
+    text-align: left;
+}
+
+.head-right {
+    text-align: right;
+}
+
+.text-left {
+    color: #ABC3C3 !important;
+    margin-left: 35px;
+    color: #000;
+}
+
+.text-right {
+    color: #ABC3C3 !important;
+    margin-right: 35px;
+    color: #000;
+}
+
+ .desc-img {
+    height: 100px !important;
+    width: 100px !important;
+    float: right;
+ }
+
+ hr {
+    border-color: #fff !important;
+    margin: 0 5% !important;
+ }
+
+ .fail-heading {
+    color: #A8D6A3;
+    padding: 0 2%;
+}

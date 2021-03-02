@@ -1,0 +1,19 @@
+<%- include('header') -%>
+<div class="bg text-center">
+    <div class="centered">
+        <p class="firstLine">F &nbsp; I &nbsp; N &nbsp; D &nbsp; &nbsp; W &nbsp; E &nbsp; A &nbsp; T &nbsp; H &nbsp; E &nbsp; R &nbsp; </p>
+        <p class="secondLine">The Simplest Weather Client Ever</p>
+        <form action="/" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="inputStyle form-control" name="place" placeholder="Enter City Name" aria-label="Enter City Name" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light" type="submit" name="submit">Show</button>
+                </div>
+            </div>
+        </form>
+
+        <h5 class="fail-heading"> Sorry! no match. Try again!</h5>
+        </div>
+</div>
+</div>
+<%- include('footer') -%>
